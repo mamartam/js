@@ -1,23 +1,39 @@
-const predictions = [
-  "A beautiful, fresh chapter is about to begin.",
-  "Your hard work will pay off sooner than you think.",
-  "Believe in yourself and magic will happen.",
-  "Expect a pleasant surprise today!",
-  "Success is not a destination, it's a journey.",
-  "Follow your heart and you will find the way.",
-  "An unexpected gift is coming your way.",
-  "Today is a perfect day to start something new.",
-  "You are stronger and more capable than you know.",
-  "Good things come to those who wait, but better things to those who go get them.",
-];
+const btnMinus = document.querySelector(".btn-minus");
+const btnReset = document.querySelector(".btn-reset");
+const btnPlus = document.querySelector(".btn-plus");
+const fontSizeValue = document.getElementById("font-size");
+const textExample = document.getElementById("text");
 
-const btn = document.getElementById("btn");
-const predictionForToday = document.querySelector(".predictionForToday");
+const btns = document.querySelectorAll(".btn");
+let counter = 16;
 
-btn.addEventListener("click", function () {
-  predictionForToday.textContent = predictions[getRandomPrediction()];
+btnMinus.addEventListener("click", function () {
+  if (counter > 8) {
+    counter -= 2;
+    fontSizeValue.textContent = counter;
+    textExample.style.fontSize = `${counter}px`;
+    colorChanger();
+  }
+});
+btnReset.addEventListener("click", function () {
+  counter = 16;
+  fontSizeValue.textContent = counter;
+  textExample.style.fontSize = `${counter}px`;
+  colorChanger();
+});
+btnPlus.addEventListener("click", function () {
+  counter += 2;
+  fontSizeValue.textContent = counter;
+  textExample.style.fontSize = `${counter}px`;
+  colorChanger();
 });
 
-function getRandomPrediction() {
-  return Math.floor(Math.random() * predictions.length);
+function colorChanger() {
+  if (counter > 24) {
+    textExample.style.color = "#E0BC00";
+  } else if (counter < 12) {
+    textExample.style.color = "red";
+  } else {
+    textExample.style.color = "black";
+  }
 }
