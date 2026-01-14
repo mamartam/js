@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Magic Prediction</title>
+    <title>Adjusting text size</title>
   </head>
   <body>
     <main>
-      <h1 class="main-header">Magic Prediction</h1>
-      <div class="prediction-container">
-        <img src="images/magic-ball.png" alt="magic-ball" />
-        <p class="predictionForToday">What prediction will I get today?</p>
-      </div>
-      <div class="button-container">
-        <button type="button" id="btn" class="btn">
-          See My Prediction for today
-        </button>
-        <div class="effect1"></div>
-        <div class="effect2"></div>
+      <h1 class="main-header">Adjusting text size</h1>
+      <p class="text" id="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cum
+        ex, quidem commodi impedit est alias optio error, tempora dicta eius
+        blanditiis voluptate nesciunt quia.
+      </p>
+      <p><span class="font-size" id="font-size">16</span>px</p>
+
+      <div class="btn-container">
+        <button type="button" class="btn btn-minus">Minus</button>
+        <button type="button" class="btn btn-reset">Reset</button>
+        <button type="button" class="btn btn-plus">Plus</button>
       </div>
     </main>
+
     <script defer src="js/main.js"></script>
   </body>
 </html>
