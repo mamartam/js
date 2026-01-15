@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  /* background-image: url(../images/inception-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+/* .bg-filter {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.8;
+} */
+.bg-filter-container {
+  position: absolute;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.bg-filter {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.5;
+  filter: blur(10px);
+}
+.card {
+  position: relative;
+  z-index: 3;
+  max-width: 400px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.film-poster {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+}
+.btn {
+  margin-top: 10px;
+  padding: 7px 25px;
+}
