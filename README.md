@@ -38,3 +38,12 @@ https://github.com/user-attachments/assets/c4e84132-20c4-400d-923c-630065ade4c1
 - addEventListener()
 - array.length
 - textContent
+
+
+## 📂 Sidebar
+https://github.com/user-attachments/assets/d19f476b-f79a-4ab1-8a1c-2209a7fc4474
+### 📚 What I Learned
+- document.querySelector()
+- addEventListener()
+- classList.toggle()
+- classList.remove()
