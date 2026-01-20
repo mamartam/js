@@ -47,3 +47,12 @@ https://github.com/user-attachments/assets/d19f476b-f79a-4ab1-8a1c-2209a7fc4474
 - addEventListener()
 - classList.toggle()
 - classList.remove()
+
+## Tabs that display different content
+https://github.com/user-attachments/assets/7a00dd93-fd6b-4b1d-91df-9c77878efb5c
+### 📚 What I Learned
+- classList.add()
+- classList.remove()
+- forEach()
+- addEventListener()
+- classList.toggle()
