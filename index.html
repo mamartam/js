@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/book-for-tab.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Book shelf</title>
+  </head>
+  <body>
+    <div class="effect-container">
+      <div class="eff1"></div>
+      <div class="eff2"></div>
+      <div class="eff3"></div>
+
+      <main>
+        <div class="add-container">
+          <input
+            id="book-id-input"
+            type="text"
+            placeholder="Add name of your book"
+          />
+          <button class="add-btn btn" type="button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M6 12H18M12 6V18"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="search-container">
+          <button class="search-btn btn" type="button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <input
+            type="text"
+            placeholder="Enter key words to find the book"
+            id="find-book-input"
+          />
+        </div>
+        <div class="all-books-container">
+          <ul class="book-list"></ul>
+        </div>
+      </main>
+    </div>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
