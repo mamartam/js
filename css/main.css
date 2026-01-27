@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+.dark-mode-body {
+  background-color: black;
+}
+input {
+  display: none;
+}
+.label-light {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  background-color: #85a4f6;
+  border-radius: 35px;
+  padding: 0px 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  justify-content: start;
+}
+.label-dark {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  background-color: #151533;
+  border-radius: 35px;
+  padding: 0px 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  justify-content: end;
+}
+.circle-light {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffc631;
+  box-shadow: 0 0 10px 2px #fde45e;
+}
+.circle-dark {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e6edfd;
+  box-shadow: 0 0 10px 2px #e6edfd;
+}
+.cloud1,
+.cloud2,
+.cloud3,
+.cloud4 {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+}
+.cloud1 {
+  top: 30px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: #d0defb;
+}
+.cloud2 {
+  top: 30px;
+  left: 65px;
+  width: 60px;
+  height: 60px;
+  background-color: #d0defb;
+}
+.cloud3 {
+  top: 35px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #d0defb;
+}
+.cloud4 {
+  width: 70px;
+  height: 70px;
+  top: 0px;
+  left: 130px;
+  background-color: #d0defb;
+}
+.cloud5,
+.cloud6,
+.cloud7,
+.cloud8 {
+  position: absolute;
+  z-index: 4;
+  border-radius: 50%;
+}
+.cloud5 {
+  top: 55px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+.cloud6 {
+  top: 40px;
+  left: 65px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+.cloud7 {
+  top: 40px;
+  left: 110px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+.cloud8 {
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  left: 140px;
+  background-color: white;
+}
+
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6,
+.star7,
+.star8 {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: lightgray;
+  box-shadow: 0 0 5px 1px lightgray;
+  width: 1px;
+  height: 1px;
+}
+.star1 {
+  top: 10px;
+  right: 70px;
+}
+.star2 {
+  top: 15px;
+  right: 100px;
+}
+.star3 {
+  top: 15px;
+  right: 150px;
+}
+.star4 {
+  top: 45px;
+  right: 110px;
+}
+.star5 {
+  top: 50px;
+  right: 140px;
+}
+.star6 {
+  top: 40px;
+  right: 90px;
+}
