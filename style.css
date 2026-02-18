@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.generate-btn {
+  position: absolute;
+  margin: 25px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 3;
+  top: 0;
+}
+.circle-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+.circle-container div {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  /* background-color: green; */
+}
